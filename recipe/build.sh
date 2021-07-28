@@ -3,7 +3,7 @@
 mkdir build
 cd build
 
-cmake \
+cmake ${CMAKE_ARGS} \
   -DCMAKE_PREFIX_PATH:PATH=${PREFIX} \
   -DCMAKE_INSTALL_PREFIX:PATH=${PREFIX} \
   -DCMAKE_INSTALL_LIBDIR=lib \
