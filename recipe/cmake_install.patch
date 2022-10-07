@@ -1,0 +1,14 @@
+--- CMakeLists.txt.org	2022-10-07 09:30:36.093033723 +0200
++++ CMakeLists.txt	2022-10-07 09:32:13.385928871 +0200
+@@ -117,7 +117,10 @@
+ set(export_name "docopt-targets")
+ 
+ # Runtime package
+-install(TARGETS docopt EXPORT ${export_name} DESTINATION ${CMAKE_INSTALL_LIBDIR})
++install(TARGETS docopt EXPORT ${export_name}
++	RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
++	DESTINATION ${CMAKE_INSTALL_LIBDIR}
++	DESTINATION ${CMAKE_INSTALL_LIBDIR})
+ 
+ # Development package
+ install(TARGETS docopt_s EXPORT ${export_name} DESTINATION ${CMAKE_INSTALL_LIBDIR})
