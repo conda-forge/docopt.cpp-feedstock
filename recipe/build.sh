@@ -1,5 +1,8 @@
 #!/bin/bash
 
+ls
+cat CMakeLists.txt
+
 mkdir build
 cd build
 

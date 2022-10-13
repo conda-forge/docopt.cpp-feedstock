@@ -1,3 +1,5 @@
+dir
+type CMakeLists.txt
 
 mkdir build
 cd build
